@@ -3,3 +3,10 @@ languageCode = "kr-ko"
 title = "My New Hugo Site"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
+
+
+[Author] # Used in authorbox
+  name = "SeoJiHun"
+  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  avatar = "image/avatar.png"
+
