@@ -1,0 +1,5 @@
+baseURL = "http://sjh4773.github.io/"
+languageCode = "kr-ko"
+title = "My New Hugo Site"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
