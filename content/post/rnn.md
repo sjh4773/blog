@@ -4,7 +4,7 @@ date: 2021-06-01T22:48:42+09:00
 categories:
  - Deep_learning
 tags:
- - Depp_learning
+ - Deep_learning
 ---
 
 # RNN in PyTorch
