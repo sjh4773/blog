@@ -1,5 +1,5 @@
 ---
-title: "RNN in PyTorch"
+title: "rnn in pytorch"
 date: 2021-06-01T22:48:42+09:00
 categories:
  - Deep_learning
