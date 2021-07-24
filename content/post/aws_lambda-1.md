@@ -16,44 +16,43 @@ tags:
 
 
 
+![](/image/awsmongo1.PNG)
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo1.PNG)
 
             
 
             
 
 
-
-            mongoDB Atlas에서 미리 만들어져있는 Clusters에서 connect 버튼을 누르면 나오는 화면에서
-
+mongoDB Atlas에서 미리 만들어져있는 Clusters에서 connect 버튼을 누르면 나오는 화면에서
 
 
 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo2.PNG)
+
+![](/image/awsmongo2.PNG)
 
 
 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo3.PNG)
+![](/image/awsmongo3.PNG)
             
             
             
 
 
 
-                Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 주소가 나온다.
+Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 주소가 나온다.
 
 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo4.PNG)
+![](/image/awsmongo4.PNG)
 
             
 
@@ -78,16 +77,13 @@ tags:
 
 ## 코드 설명
 
-
-
-
-
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo5.PNG)
+![](/image/awsmongo5.PNG)
 
            
            
             
 
+            
             handler 함수 내부에서는 데이터베이스 설정 및 변수 초기화라고 해서 초기화를 진행할 수 있도록 한다.
             먼저 이렇게 mongoose. Promise = global.Promise; 설정을 해주고
             그리고 mongoose.connect(MONGODB_URI, { useNewUrlParser: true}); 이 커넥트 함수를 이용해서
@@ -116,7 +112,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo6.PNG)
+![](/image/awsmongo6.PNG)
 
 
 
@@ -144,7 +140,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo8.JPG)
+![](/image/awsmongo8.JPG)
 
             
 
@@ -181,7 +177,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo9.PNG)
+![](./image/awsmongo9.PNG)
 
 
 
@@ -201,7 +197,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo7.PNG)
+![](/image/awsmongo7.PNG)
 
 
 
