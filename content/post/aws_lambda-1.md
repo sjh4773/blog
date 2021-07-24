@@ -16,7 +16,8 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo2.PNG)
+ 
+![](/image/awsmongo1.png)
 
 
             
@@ -30,16 +31,15 @@ mongoDB Atlas에서 미리 만들어져있는 Clusters에서 connect 버튼을 �
 
 
 
-
-
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo2.PNG)
+![](/image/awsmongo2.png)
 
 
 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo3.PNG)
+![](/image/awsmongo3.png)
+
             
             
             
@@ -52,7 +52,7 @@ Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo4.PNG)
+![](/image/awsmongo4.png)
 
             
 
@@ -77,8 +77,7 @@ Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 
 
 ## 코드 설명
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo5.PNG)
-
+![](/image/awsmongo5.png)
            
            
             
@@ -111,8 +110,7 @@ Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 
             --> 오류 발생!!
 
 
-
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo6.PNG)
+![](/image/awsmongo6.png)
 
 
 
@@ -140,7 +138,7 @@ Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo8.JPG)
+![](/image/awsmongo8.jpg)
 
             
 
@@ -177,7 +175,7 @@ Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo9.PNG)
+![](/image/awsmongo9.png)
 
 
 
@@ -197,7 +195,7 @@ Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo7.PNG)
+![](/image/awsmongo7.png)
 
 
 
