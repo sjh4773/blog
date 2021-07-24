@@ -14,17 +14,21 @@ tags:
 - 이를 위해서는 별도의 MongoDB가 사전에 구축이 되어있어야 한다.(Atlas MongoDB)
 
 
-![](/image/awsmongo1.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo1.png)
 
             mongoDB Atlas에서 미리 만들어져있는 Clusters에서 connect 버튼을 누르면 나오는 화면에서
 
-![](/image/awsmongo2.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo2.png)
 
-![](/image/awsmongo3.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo3.png)
+            
             
             Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 주소가 나온다.
 
-![](/image/awsmongo4.PNG)
+
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo4.png)
+
+            
 
             이것을 copy 해서 AWS Lambda function에 환경 변수로서 설정해서 사용할 수 있다.
             환경변수를 설정한 뒤 환경변수를 Lambda 함수 안에 불러와 사용할 수 있다.
@@ -43,7 +47,7 @@ tags:
 
 ## 코드 설명
 
-![](/image/awsmongo5.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo5.png)
 
            
            
@@ -75,7 +79,7 @@ tags:
 
 
 
-![](/image/awsmongo6.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo6.png)
 
 
 
@@ -97,7 +101,7 @@ tags:
                 });
             };
 
-![](/image/awsmongo8.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo8.jpg)
 
             코드를 실행하였을 때 정상적으로 데이터베이스에 접근이 되지 않는다.
             데이터베이스에 접속을 시도하는 정보를 바르게 확인하기 위해서 위 코드에서 async를 지워주고 다시 save를 해서
@@ -128,7 +132,7 @@ tags:
                 context.done(null, {'statusCode': 200}); # 처리된 결과를 완전히 종료된 형태로써 반환할 수 있도록 하기 위해서 context.done 함수를 불러와서 statusCode로 200번을 내보내도록 할 수 있음
             };
 
-![](/image/awsmongo9.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo9.png)
 
 
 ## 오류 발생 및 해결
@@ -136,7 +140,7 @@ tags:
             라이브러리 zip을 업로드 하고 코드를 테스트 하였을 때, AWS Lambda Error: “Cannot find module '/var/task/index'”
             다음과 같은 에러가 발생하였고 이를 https://stackoverflow.com/questions/41750026/aws-lambda-error-cannot-find-module-var-task-index를 참고하여 해결하였다.
 
-![](/image/awsmongo7.PNG)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo7.png)
 
 
 
