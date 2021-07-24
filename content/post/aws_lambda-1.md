@@ -14,19 +14,48 @@ tags:
 - 이를 위해서는 별도의 MongoDB가 사전에 구축이 되어있어야 한다.(Atlas MongoDB)
 
 
+
+
+
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo1.png)
+
+            
+
+            
+
+
 
             mongoDB Atlas에서 미리 만들어져있는 Clusters에서 connect 버튼을 누르면 나오는 화면에서
 
+
+
+
+
+
+
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo2.png)
+
+
+
+
+
 
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo3.png)
             
             
-            Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 주소가 나온다.
+            
+
+
+
+                Connet Your Application 누르면 우리의 mongoDB에 접속할 수 있는 URL 주소가 나온다.
+
+
+
 
 
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo4.png)
+
+            
 
             
 
@@ -45,12 +74,20 @@ tags:
             왜 굳이 그냥 문자열을 코드상으로 붙여넣지 않고 환경변수를 이용하냐면 코드상으로 데이터베이스의 패스워드가
             노출이 되면 보안상 문제를 야기할 수 있으므로 이렇게 패스워드값은 환경변수르 설정하는 습관을 들여야 한다.
 
+
+
 ## 코드 설명
+
+
+
+
 
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo5.png)
 
            
            
+            
+
             handler 함수 내부에서는 데이터베이스 설정 및 변수 초기화라고 해서 초기화를 진행할 수 있도록 한다.
             먼저 이렇게 mongoose. Promise = global.Promise; 설정을 해주고
             그리고 mongoose.connect(MONGODB_URI, { useNewUrlParser: true}); 이 커넥트 함수를 이용해서
@@ -83,6 +120,9 @@ tags:
 
 
 
+            
+
+
             이제 Library 압축파일을 AWS Lambda에 업로드하면 된다. 이때 적용하는 런타임 환경이 Node.js 10.x 이므로
             적용하는 AWS Lambda 함수도 같은 런타임 환경을 가지고 있어야 한다.
             Layer의 런타임 환경과 AWS Lambda 런타임 환경을 일치시켜줘야 한다.
@@ -101,7 +141,13 @@ tags:
                 });
             };
 
+
+
+
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo8.jpg)
+
+            
+
 
             코드를 실행하였을 때 정상적으로 데이터베이스에 접근이 되지 않는다.
             데이터베이스에 접속을 시도하는 정보를 바르게 확인하기 위해서 위 코드에서 async를 지워주고 다시 save를 해서
@@ -132,15 +178,34 @@ tags:
                 context.done(null, {'statusCode': 200}); # 처리된 결과를 완전히 종료된 형태로써 반환할 수 있도록 하기 위해서 context.done 함수를 불러와서 statusCode로 200번을 내보내도록 할 수 있음
             };
 
+
+
+
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo9.png)
+
+
+
+
 
 
 ## 오류 발생 및 해결
 
+            
+
+
+
             라이브러리 zip을 업로드 하고 코드를 테스트 하였을 때, AWS Lambda Error: “Cannot find module '/var/task/index'”
             다음과 같은 에러가 발생하였고 이를 https://stackoverflow.com/questions/41750026/aws-lambda-error-cannot-find-module-var-task-index를 참고하여 해결하였다.
 
+
+
+
+
 ![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo7.png)
+
+
+
+        
 
 
 
