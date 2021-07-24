@@ -17,7 +17,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo1.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo1.PNG)
 
             
 
@@ -33,14 +33,14 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo2.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo2.PNG)
 
 
 
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo3.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo3.PNG)
             
             
             
@@ -53,7 +53,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo4.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo4.PNG)
 
             
 
@@ -82,7 +82,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo5.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo5.PNG)
 
            
            
@@ -116,7 +116,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo6.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo6.PNG)
 
 
 
@@ -144,7 +144,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo8.jpg)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo8.JPG)
 
             
 
@@ -181,7 +181,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo9.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo9.PNG)
 
 
 
@@ -201,7 +201,7 @@ tags:
 
 
 
-![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo7.png)
+![](C:/Hugo/blog/themes/mainroad/static/image/awsmongo7.PNG)
 
 
 
