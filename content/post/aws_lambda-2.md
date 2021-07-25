@@ -529,7 +529,7 @@ tags:
             API 동작해서 어떠한 오류가 나오지 않는 것을 확인할 수 있다.
             결과적으로 POST 방식의 메소드 즉 하나의 게시글 데이터를 작성하는 이러한 API에 대해서는 작성이 완료되었다.
 
-![](/image/board5.png
+![](/image/board5.png)
 
 ![](/image/board6.png)
 
