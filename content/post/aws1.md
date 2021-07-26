@@ -71,13 +71,13 @@ tags:
 You may not specify a referenced group id for an existing IPv4 CIDR rule.
 
 
-![](/image/RDS8.png)
+![](/image/RDS8.jpg)
 
 ### 해결
 문제가 되는 해당 규칙 삭제 후, 새 규칙 추가하여 해결.
 
 
-![](/image/RDS9.png)
+![](/image/RDS9.jpg)
 
 
 # Heidi SQL을 이용해 간편하게 AWS RDS 접속하기
