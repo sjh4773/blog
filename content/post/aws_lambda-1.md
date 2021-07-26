@@ -3,9 +3,9 @@ title: "AWS Lambda와 MongoDB 연동"
 date: 2021-07-24T15:51:51+09:00
 description: "AWS Lambda"
 categories:
-  - "AWS Lambda"
+  - "AWS"
 tags:
-  - "AWS Lambda"
+  - "AWS"
 ---
 
 

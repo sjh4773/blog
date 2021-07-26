@@ -3,9 +3,9 @@ title: "AWS Lambda로 게시판 서버 API 만들기"
 date: 2021-07-25T15:31:14+09:00
 description: "AWS Lambda"
 categories:
-  - "AWS Lambda"
+  - "AWS"
 tags:
-  - "AWS Lambda"
+  - "AWS"
 ---
 
             API Gateway에서 Board-API로 들어가 /board에 GET,POST,PUT,DELETE 메서드를 추가하여 해당 Lambda 함수에 접근할 수 있도록 API개발해야한다.
