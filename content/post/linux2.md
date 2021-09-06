@@ -1,5 +1,5 @@
 ---
-title: "Linux 명령어 정리"
+title: "linux 명령어 정리"
 date: 2021-09-06T18:48:12+09:00
 categories:
   - linux
