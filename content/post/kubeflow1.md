@@ -9,9 +9,9 @@ tags:
 
 ### 쿠베플로우가 필요한 이유
 
-![](/image/kube4.JPG)
+![](/image/kube4.jpg)
 
-![](/image/kube5.JPG)
+![](/image/kube5.jpg)
 
 
             Kubeflow Kubernetes 용 ML 툴킷이다 다음 다이어그램은 Kubernetes를 기반으로 ML 시스템의
@@ -23,7 +23,7 @@ tags:
 
 1. 조합가능성(Composability)
 
-![](/image/kube1.JPG)
+![](/image/kube1.jpg)
 
 쿠베플로우의 핵심 구성 요소는 이미 머신러닝 실무자들에게 익숙한 데이터과학 도구를 사용한다.
 이들은 기계 학습의 특정 단계를 용이하게 하기 위해 독립적으로 사용되거나 엔드 투 엔드
@@ -31,7 +31,7 @@ tags:
 
 2. 이식성(Potability)
 
-![](/image/kube2.JPG)
+![](/image/kube2.jpg)
 
 컨테이너 기반 설계를 갖추고 Kubernetes 및 클라우드 네이티브 아키텍쳐를 활용함으로써
 Kubeflow는 특정 개발환경에 종속될 피요가 없다. 랩톱에서 실험 및 프로토타입 작업을 수행할 수 있으며,
@@ -39,7 +39,7 @@ Kubeflow는 특정 개발환경에 종속될 피요가 없다. 랩톱에서 실�
 
 3. 확장성(Scalabitility)
 
-![](/image/kube3.JPG)
+![](/image/kube3.jpg)
 
 Kubernetes를 사용하면 기본 컨테이너와 기계의 수와 크기를 변경하여 클러스터의 요구에 따라
 동적으로 확장할 수 있다.
@@ -55,23 +55,30 @@ Kubernetes를 사용하면 기본 컨테이너와 기계의 수와 크기를 변
 - 쿠베플로우 파이프라인
   - 쿠베플로우의 핵심적인 구성요소는 바로 쿠베플로우 파이프라인이다. 파이프라인 오케스트레이션을 수행해주는 툴이다.
 
-![](/image/kube7.JPG)
+![](/image/kube7.jpg)
+
 
             my_python_func 함수에다가
             @kfp.dsl.python_component
             decorator를 적어주면 된다.
 
-![](/image/kube8.JPG)
+
+![](/image/kube8.jpg)
+
 
             DSL decorator가 적힌 파이썬 함수를 도커 이미지로 패키징한다.
             그리고 이 도커 이미지를 활용하여 쿠베플로우 컴포넌트를 만들 수 있음.
 
-![](/image/kube9.JPG)
+
+![](/image/kube9.jpg)
+
 
             마지막으로 @kfp.dsl.pipeline 데코레이터를 활용하여
             해당 쿠베플로우 컴포넌트를 파이프라인으로 패키징 할 수 있다.
 
-![](/image/kube10.JPG)
+
+![](/image/kube10.jpg)
+
 
             파이프라인 구성을 완료하면 해당 파이프라인을 YAML 형태로 패키지할 수 있고,
             이를 "파이프라인을 컴파일"한다고 한다.
@@ -81,7 +88,7 @@ Kubernetes를 사용하면 기본 컨테이너와 기계의 수와 크기를 변
 
 ### 용어 설명
 
-![](/image/kube6.JPG)
+![](/image/kube6.jpg)
 
 - Central dashboard
   - 파이프라인 등록과 실행을 할 수 있으며 실험내역과 그 안에서 각각의 컴포넌트가 실행된 결과를 확인할 수 있다.
