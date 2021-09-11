@@ -178,7 +178,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## 리더 파티션, 팔로워 파티션
 
-![](/image/kafka15.jpg)
+
 
 - 리더 파티션 : Kafka 클라이언트(Producer, Consumer)와 데이터를 주고 받는 역할
 - 팔로워 파티션 : 리더 파티션으로부터 레코드를 지속 복제(복제하는 시간이 걸림).
@@ -186,7 +186,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## ISR, 리더와 팔로워의 싱크
 
-![](/image/kafka16.jpg)
+![](/image/kafka15.jpg)
 
 - 파티션 3개, 레플리케이션이 3개로 이루어진 토픽이 브로커에 할당된 모습
 - 특정 파티션의 리더, 팔로워가 레코드가 모두 복제되어 sync가 맞는 상태
@@ -195,7 +195,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## Broker partition replication
 
-![](/image/kafka17.jpg)
+![](/image/kafka16.jpg)
 
 - Broker #1 장애 발생 시
   - partition #1의 리더가 브로커 1 또는 2 중에 새로 할당
@@ -203,7 +203,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## Kafka rack-awareness
 
-![](/image/kafka18.jpg)
+![](/image/kafka17.jpg)
 
 - 1개의 Rack에 다수의 브로커를 몰아 넣는 것은 위험
 
@@ -235,7 +235,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## Kafka Client
 
-![](/image/kafka19.jpg)
+![](/image/kafka18.jpg)
 
 - Kafka와 데이터를 주고받기 위해 사용하는 Java Library
 - Producer, Consumer, Admin, Stream 등 Kafka 관련 api 제공
@@ -244,7 +244,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## Kafka Streams
 
-![](/image/kafka20.jpg)
+![](/image/kafka19.jpg)
 
 - 데이터를 변환(Transformation)하기 위한 목적으로 사용하는 API
 - 스트림 프로세싱을 지원하기 위한 다양한 기능을 제공
@@ -256,7 +256,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## Kafka Connect
 
-![](/image/kafka21.jpg)
+![](/image/kafka20.jpg)
 
 
 - 많은 경우 Kafka client로 Kafka로 데이터를 넣는 코드를 작성할때도 있지만,
@@ -269,7 +269,7 @@ Answer : Partition을 다른 Broker에 복제하여 이슈에 대응한다.
 
 ## Kafka Mirror maker
 
-![](/image/kafka22.jpg)
+![](/image/kafka21.jpg)
 
 - 특정 카프카 클러스터에서 다른 카프카 클러스터로 Topic 및 Record를 복제하는 Stanalone tool
 - 2019년 11월, 기존 MirrorMaker를 개선한 MirrorMaker2.0 release
