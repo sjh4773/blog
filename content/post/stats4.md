@@ -1,0 +1,111 @@
+---
+title: "Two-way ANOVA"
+date: 2021-10-08T19:06:37+09:00
+categories:
+ - 통계 공부
+tags:
+ - 통계 공부
+---
+
+- Two-way ANOVA란?
+  - 독립변수가 2개 + α 인 ANOVA
+    - 독립변수가 2개라는 것은 무슨 뜻일까?
+      - 앞의 예제를 생각해보면,
+      - Payment Method라는 첫번째 독립변수에 더하여
+      - Contract라는 두번째 독립변수가 등장
+      - 즉, Payment Method의 네가지 그룹에 따라 종속 변수인 Total Charges가 변화할 것이라고 예측하고,
+      - 동시에, Contract의 세가지 그룹에 따라 종속변수인 Total Charges가 변화할 것이라고 예측하는 것임
+   - 여기서 독립변수는 Main effect(주효과)가 있다고 함
+   - 즉, Two-way ANOVA에서는 Main effect가 2개임
+   - 그렇다면 여기서 α는 무엇인가?
+     - Two-way ANOVA의 α는 interaction (상호작용/교호작용)임
+     - Interaction (상호작용/교호작용)이 왜 뜬금없이 여기서 등장하나?
+     - Interaction (상호작용/교호작용)이란 무엇인가?
+   - Interaction (상호작용/교호작용) 이란?
+     - 한 독립변수의 main effect가 다른 독립변수의 level(=group)에 따라 원래의 linear relationship이 non-linear하게 변하는 경우
+     - 도대체 이게 무슨 뜻일까요?
+   - 먼저, linear relationship 부터 알아봅시다
+     - Linear relationship이란 선형관계라고 합니다
+     - 여기서 선형은 직선을 의미합니다
+     - 즉 독립변수와 종속변수의 관계가 (직)선형관계라고 이미 전제된 거죠
+     - t-test이든 ANOVA이든 이미 사전에 (직)선형관계는 전제된 겁니다
+     - 다만, 우리가 쓸데없이 복잡한 것들을 사전에 말하지 않았을 뿐입니다
+     - 여러분들이 하게 될 모든 분석은 일단 선형관계를 전제 한다고 이해하고 시작해야만 합니다
+   - 결론적으로,
+     - Interaction 이란, 한 독립변수의 종속변수에 대한 영향관계가 다른 독립변수의 level(=group)에 따라 변할 경우,
+     - 우리는 이를 interaction effect (상호작용)이 있다고 함
+   - 이러한 변화는 연구/조사에 있어서 매우 중요함
+     - 왜냐하면, 기존에 이러한 변화가 있음이 알려지지 않았다면, 이런 두 변수를 이용하여 다양한 결과를 예측할 수 있는 길이 열림
+     - 기존에 원인을 알 수 없었던 종속변수의 결과(반응)에 대해 그 원인을 알 수 있는 바탕이 됨
+
+- 다시 한번 기억을 되살려 봅시다
+  - ANOVA를 하면 F-value(F값)을 구한다고 했습니다
+  - F-value = (Between Variance / Within Variance)
+  - 이때, One-way ANOVA에서 독립변수는 1개 였고, 우리의 관심사는 저 F값의 분자부분(윗부분)이었습니다
+- 그렇다면, Two-way ANOVA에서는 어떻게 바뀔까요?
+  - 일단, 독립변수가 2개입니다
+  - 따라서 저 위의 F값이 2개가 되어야 합니다
+  - 또한 우리는 추가적으로 interaction도 유의한지 아닌지 알아야 합니다
+  - 따라서 interaction에 대한 F값도 한 개 더 필요합니다
+- 그러므로, 우리는 총 3개의 F-value(F값)을 구해야 합니다
+  - F-value = (Between Variance/Within Variance)
+  - 첫 번째 독립변수의 main effect를 측정하기 위한 F-value(F값)
+  - 두 번째 독립변수의 main effect를 측정하기 위한 F-value(F값)
+  - Interaction의 효과를 측정하기 위한 F-value(F값)
+- 그러므로 우리는 총 3개의 Between variance가 필요합니다
+- 그러면 또한 3개의 Within variance가 필요할까요?
+  - 아닙니다
+  - 왜냐하면 within variance의 역할은 between variance가 충분히 큰지 혹은 작은지 알기 위한 비교 대상이므로 비교대상은 동일해야 함
+
+- 통계적 가설은 몇 개가 필요할까요? 3개
+  - 첫 번째 main effect에 대한 통계적 가설
+  - 두 번째 main effect에 대한 통계적 가설
+  - Interaction에 대한 통계적 가설
+  - 첫 번째 main effect가 유의할 경우 -> 사후검정 필요
+  - 두 번째 main effect가 유의할 경우 -> 사후검정 필요
+  - Interaction이 유의할 경우 -> 사후검정 필요(?). 가능은 하지만 매우 복잡함
+  - 사후검정 보다는 그래프를 그려보는 것이 더 이해하기 쉬움
+
+- Two-way ANOVA SS의 종류
+  - SS의 세 가지 종류
+    - SS란 sum of squares의 약자
+      - Variance를 계산할 때, 분자 부분을 SS라고 함
+      - 이를 계산하는 방법이 세 가지 종류가 있음
+      - 보통 TYPE I / II / III 로 이야기 하는데, 이는 통계학에 정해진 것이라기보다는 SAS가 만들어질 때 프로그램 개발자들이 넣은 것
+      - One-way ANOVA에서는 아무 차이가 없음
+      - 중요한 것은 각 그룹내의 샘플 개수가 동일한 경우 (Balanced)에는 Type I / II / III 사이의 차이는 없음
+      - 그룹내의 샘플 개수가 동일하지 않은 경우 (Unbalanced)에만 Type I / II / III의 결과가 달라짐
+  - Type I SSS
+    - 제 1유형 제곱합이라고도 하며 순차 제곱합이라고도 함
+    - 이 유형의 경우 변수를 한 개씩 순차적으로 추가하면서 제곱합을 제곱합을 계싼
+      - SS(A) for factor A
+      - SS(B | A) for factor B
+      - SS(AB | B, A) for interaction AB
+   - 변수의 순서에 따라 SS가 변화
+   - 특별한 목적에 맞춰서 사용
+      - 중요한 변수를 먼저 감안한 뒤에 다른 추가 변수를 테스트하려할 경우
+      - 변동 불가능한 변수를 먼저 고려한 뒤에 변동 가능한 변수를 넣고 테스트
+   - 일반적으로 많이 쓰이지는 않음
+  - Type II SS
+    - 제 2유형 제곱합이라고함
+    - 이 유형의 경우 interaction은 제외하고 계산
+      - SS(A | B) for factor A
+      - SS(B | A) for factor B
+    - Interaction은 유의하지 않다고 전제
+    - 따라서, Interaction이 유의하지 않을 경우 사용하는 것이 좋음
+  - Type III SS
+    - 제 3유형 제곱합이라고도 하며 수정 제곱합이라고도 함
+    - 다른 모든 요인들이 모두 이미 모형에 들어있다는 가정하에 마지막에 새로 추가되는 요인의 변동을 계산한 제곱합
+      - SS(A | B, AB) for factor A
+      - SS(B | A, AB) for factor B
+    - 변수의 순서에 따라 SS가 변화하지 않음
+    - 일반적으로 사용되는 SS는 Type III SS임
+    - 복잡하다면 그냥 이 세번째 SS를 사용하면 됨
+
+- 그렇다면 무엇을 써야 하나?
+   - 특별한 이유가 없다면 Type III SS를 사용함
+   - 단, interaction effect가 유의하지 않다면, Type II SS 가 더 좋음
+   - Type I SS를 사용할 경우에는, 변수의 순서를 조심할 것
+   - 보통의 어지간한 통계 프로그램은 TyPE III SS가 기본 설정임
+   - SAS의 경우 Type I SS와 Type III SS가 둘 다 결과표로 제공 됨
+   - 이 경우 가급적 Type III SS로 결과 해석하는 것이 좋음
