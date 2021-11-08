@@ -1,5 +1,5 @@
 ---
-title: "verilog HDL"
+title: "verilog HDL 기본문법"
 date: 2021-11-08T23:39:51+09:00
  - verilog_HDL
 tags:
